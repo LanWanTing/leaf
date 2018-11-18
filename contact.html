@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<?php header('X-UA-Compatible: IE=edge,chrome=1'); ?>
+<meta name="viewport" content="width=1080">
+<meta name="keywords" content="言葉部屋 | 此為校稿頁面">
+<meta name="description" content="言葉部屋 | 此為校稿頁面">
+<title>言葉部屋 | 此為校稿頁面</title>
+<link href="myfavicon.ico" rel="icon">
+<link href="myfavicon.ico" rel="shortcut icon">
+<link href="apple-touch-icon.png" rel="apple-touch-icon">
+<link href="css/style.css" rel="stylesheet">
+<script src="js/plugins/jQuery/jquery-1.8.3.js"></script>
+<script src="js/plugins/jQuery/script-3.0.6.js"></script><!--相簿-->
+<script src="js/plugins/jQuery/jquery.easing-1.3.js"></script><!--相簿-->
+<script src="js/common.js"></script>
+<script>
+jQuery(document).ready(function(e) {
+	// Big Photo	
+	var buttons = {
+		previous: jQuery('.button-previous'),
+		next:jQuery('.button-next')
+	};
+	
+	jQueryobj = jQuery('.profileSlideWrap').lofJSidernews({
+		interval: 6000,
+		easing: 'easeInOutQuad',
+		//direction    : 'opacity',
+		duration: 700,
+		auto: true,
+		maxItemDisplay: 4,
+		startItem: 0,
+		navPosition: 'horizontal', // horizontal
+		navigatorHeight: 95,
+		navigatorWidth: 155, // 包括小圖中間間隔寬度
+		mainWidth: 600,
+		buttons: buttons
+	});	
+});
+</script>
+</head>
+<body class="ibody2">
+    <!-- Header -->
+    <header id="iHeader">
+    	<div class="headerWrap">
+        	<h1 class="logo"><a href="index.html" title="言葉部屋"><img src="images/logo.png" width="120" height="233" alt="言葉部屋"></a></h1>
+            <div class="menubox">
+            	<ul class="menuUl">
+                <li class="menuLi"><a href="about.html" title="關於言葉" class="mlink m1"></a></li>
+                <li class="menuLi"><a href="room.html" title="房型介紹" class="mlink m2"></a></li>
+                <li class="menuLi2"></li>
+                <li class="menuLi"><a href="contact.html" title="線上諮詢" class="mlink m3"></a></li>
+                <li class="menuLi"><a href="location.html" title="交通位置" class="mlink m4"></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>	
+    <!-- End Header -->
+    <!--Main-->
+    <div id="pMain">
+    	<div id="pTitle"><div class="pTitleBox"><img src="images/contact_title.png" width="185" height="45" alt="房型介紹"></div></div>
+        <div id="pCont">
+          <div class="contact">
+            <div class="contactBox">
+              <div class="contactInfo">歡迎填寫線上諮詢單，以下有「*」號之欄位請您協助填寫正確，我們將會在收到諮詢單後，儘快與您聯繫。</div>
+              <form class="consulbox">
+            	<table class="formCont">
+                	<tr>
+                    	<td class="title"><span>* 聯絡姓名</span></td>
+                    	<td class="info"><input type="text" name="" class="inputxt w170" value=""></td>
+                        <td class="title"><span>* 性別</span></td>
+                    	<td class="info"><input name="sex" type="radio" value=""><label>先生</label>&nbsp;&nbsp;<input name="sex" type="radio" value=""><label>小姐</label></td>
+                    </tr>
+                    <tr>
+                        <td class="title"><span>聯絡電話</span></td>
+                    	<td class="info"><input type="text" name="" class="inputxt w170" value=""></td>
+                        <td class="title"><span>* 手機</span></td>
+                    	<td class="info"><input type="text" name="" class="inputxt w170" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="conT">* 連絡信箱</th>
+                        <td class="conM" colspan="3"><input type="text" name="" class="inputxt w480" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="conT">* 諮詢類型</th>
+                        <td class="conM" colspan="3">
+                          <select name="" class="inBag">
+                            <option value="">請選諮詢類型</option>
+                            <option value="">預約賞屋</option>
+                            <option value="">一般諮詢</option>
+                            <option value="">建議與反映</option>
+                          </select>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td class="conT">* 房　　型</th>
+                        <td class="conM" colspan="3">
+                          <select name="" class="inBag">
+                            <option value="">請選擇房型</option>
+                            <option value="">言葉單人套房</option>
+                            <option value="">言葉雙人套房</option>
+                            <option value="">言葉四人雅房</option>
+                          </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="conT">* 諮詢內容</td>
+                        <td class="conM" colspan="3"><textarea name="content" rows="6" class="input w480"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td colspan="3">
+                        <input type="submit" class="btnSubmi">
+                        <input type="reset" class="btnReset">  
+                        </td>
+                </table>
+            </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--End Main-->
+    <!--Footer-->
+    <footer id="ifooter">
+    Copyright&nbsp; &copy; &nbsp; 言葉部屋LEAF HOUSE .&nbsp; All rights reserved &nbsp;&nbsp;&nbsp;<a href="http://www.tinalan.com/" title="TINA LAN PORTFOLIO" target="_blank">DESIGN BY TINA LAN</a>
+    </footer>
+    <!--End Footer-->
+</body>
+</html>

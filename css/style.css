@@ -1,0 +1,221 @@
+﻿@charset "utf-8";
+/* 
+ * CSS Document 
+ * $Web: 言葉部屋$
+ * $Author: Tina Lan $
+ * $Date: 2014-01-26(一)$
+ */
+
+img {border: 0; text-decoration:none;}
+a{ text-decoration:none;}
+
+.ibody{ width:100%; margin:0; padding:0; background:url(../images/ibk.png) repeat-x left top;}
+.ibody2{ width:100%; margin:0; padding:0; background:url(../images/pbk.png) repeat-x left top;}
+
+/*Header*/
+#iHeader{width:100%; margin:0; padding:0; overflow:hidden; min-width:1080px;}
+#iHeader .headerWrap{ width:1080px; height:260px; margin:0 auto; position:relative;}
+#iHeader h1.logo a{ width:120px; height:233px;  position:absolute; left:45%; top:-15px; z-index:10;}
+#iHeader .menubox{ width:930px; height:45px; position:absolute; z-index:8; left:50px; top:180px;}
+ul.menuUl{ list-style:none; float:left; margin:0 auto;}
+li.menuLi{ width:130px; height:45px; overflow:hidden; float:left; margin:0 20px;}
+li.menuLi2{ width:160px; height:45px; overflow:hidden; float:left; margin:0 20px;}
+li.menuLi a.mlink{height:45px; display:block; overflow:hidden;}
+li.menuLi a.m1 {background:url(../images/menu1.png); width:130px;}
+li.menuLi a.m2 {background:url(../images/menu2.png); width:130px;}
+li.menuLi a.m3 {background:url(../images/menu3.png); width:130px;}
+li.menuLi a.m4 {background:url(../images/menu4.png); width:130px;}
+li.menuLi a:hover{ background-position:0 45px;}
+
+/*Footer*/
+#ifooter{ width:1080px; height:35px; background:url(../images/fbk.png) top center no-repeat; margin:0 auto; padding:0; padding-top:30px; overflow:hidden; font-family:'Arial','微軟正黑體'; font-size:12px; color:#333; text-align:center;}
+#ifooter a{ font-size:12px; color:#777; text-decoration:none;}
+#ifooter a:hover{ color:#CCC;}
+
+/*Banner*/
+#iBanner {
+	position: relative;
+	margin:-30px auto 0;
+	width: 1080px;
+	height: 540px;
+	overflow: hidden;
+	z-index: 0;
+	background:url(../images/banner_bk.png) no-repeat bottom center;
+}
+#iBanner .bannerWrap {
+	position: relative;
+	width: 1000px;
+	height: 445px;
+	overflow: hidden;
+	margin:35px auto 0;
+}
+#iBanner ul {margin: 0; padding: 0; list-style: none;}
+#iBanner .dotBar {
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	width: 1000px;
+	height: 17px;
+	overflow: hidden;
+	text-align: center;
+	z-index: 999;
+}
+#iBanner .dotBar li {
+	display: inline-block;
+	margin: 0 1px;
+	width: 8px;
+	height: 8px;
+	overflow: hidden;
+	text-indent: -9999px;
+	background: url(../images/dot.png) 0 0 no-repeat;
+	cursor: pointer;
+}
+#iBanner .dotBar li.on {background-position: 0 -8px;}
+
+/*首頁-News*/
+#iNews{ width:1080px; height:310px; background:url(../images/newspic.png) no-repeat 40px 10px; margin:20px auto 20px; padding:0; position:relative; overflow:hidden;}
+#iNews .listBox{ width:750px; margin-right:20px; float:right;}
+#iNews table{width:750px; border:0; border-spacing: 0; border-collapse: collapse; overflow:hidden;}
+#iNews tr {font-size: 14px; color:#000; line-height:25px; font-family:"微軟正黑體", "Arial"; font-weight:bold;}
+#iNews th.date {color:#9bba85; width:20%; vertical-align:top;}
+#iNews td.title {width:70%;}
+#iNews td.title a{font-size: 14px; color:#000; font-weight:bold;}
+#iNews td.title a:hover{color:#666;}
+#iNews td.space {width:10%;}
+#iNews td.info { width:70%;color:#888; line-height:18px; font-size:12px; font-weight:normal;}
+#iNews td.line { background: url(../images/i_n_line.png) no-repeat center; line-height:20px;}
+
+/*首頁-room*/
+#iRoom{ width:1080px; height:300px; margin:10px auto; padding:0; position:relative;}
+#iRoom .title{ width:130px; height:55px; margin:0 auto 20px; background:url(../images/roomtitle.png) no-repeat;}
+#iRoom .roomBox{ width:1000px; height:200px; margin: 10px auto;}
+#iRoom ul.listBox{ list-style:none; padding:0; float:left;}
+#iRoom li.roomList{ width:300px; height:180px; margin-left:30px; overflow:hidden; float:left;}
+#iRoom li.roomList .room{width:300px; height:180px; margin:0; padding:0; overflow:hidden;}
+#iRoom li.roomList .picbox{width:185px; float:left; overflow:hidden;}
+#iRoom li.roomList .pic{ width:185px; height:180px; overflow:hidden; position:absolute;}
+#iRoom li.roomList a.mask{ width:185px; height:180px; overflow:hidden; z-index:2; position:absolute; background:url(../images/i_r_circle.png) no-repeat center;}
+#iRoom li.roomList .infoBox{ width:115px; height:160px; overflow:hidden; float:left; position:relative; margin:10px 0 0 190px; }
+#iRoom li.roomList .title{ width:103px; height:25px; padding:0 0 3px 12px; font-size: 15px; color:#737372; line-height:25px; font-family:"微軟正黑體", "Arial"; background:url(../images/r_leaf.png) center 5px no-repeat;}
+#iRoom li.roomList .title:hover{ background-position:0 -23px;}
+#iRoom li.roomList .title a{font-size: 15px; color:#737372; text-decoration:none;}
+#iRoom li.roomList .title a:hover{ color:#222;}
+#iRoom li.roomList .info{width:103px; padding: 10px 0 0 12px; font-size: 12px; color:#222; line-height:21px; font-family:"細明體", "Arial";}
+
+/*內頁共同*/
+#pMain{ width:100%; margin:0; padding:0; min-width:1080px;}
+#pTitle{ width:1080px; height:60px; margin:10px auto; padding:0; background:url(../images/pline.png) no-repeat center 45px;}
+.pTitleBox{ height:45px; margin:0; margin-left:30px;}
+#pCont{width:1080px; margin:0 auto; padding:0; font-family:"微軟正黑體", "Arial";}
+
+/*about*/
+.aboutbk{background:url(../images/about_bk.png) no-repeat center;}
+.aboutCon{ width:470px; height:782px; margin:20px 10px 0 70px; padding:0; color:#333; font-size:13px; line-height:22px; overflow:hidden; }
+
+/*room*/
+.roomBox{ width:1004px; height:201px; margin:25px auto 0; padding:0; overflow:hidden;}
+.room1{ background:url(../images/room/room_single.png) top no-repeat;}
+.room2{ background:url(../images/room/room_double.png) top no-repeat;}
+.room3{ background:url(../images/room/room_four.png) top no-repeat; margin-bottom:50px;}
+.roomBox:hover{ background-position:0 -201px;}
+
+/*房型相簿*/
+.roomViewBox{ width:1004px; height:550px; margin:25px auto 0; padding:0; overflow:hidden; position:relative;}
+.viewLeft{width:600px; float:left; margin-left:10px;}
+.profileSlideWrap { width:600px;}
+.imgWrap { position:relative; width:600px; height:400px;}
+
+/* 外框 */
+#bannerWrap { position:relative; width:600px; height:400px; border: #ccc solid 1px;}
+#bannerWrap a:focus { outline:none;} /* Firefox, Google */
+
+/* 讀取 */
+#bannerWrap .preload { position:absolute; top:0; left:0; width:100%; height:100%; overflow:hidden; text-align:center; background-color:#fff; z-index:5;}
+#bannerWrap .preload div { width:100%; height:100%; overflow:hidden; background:url(../images/loading.gif) 50% 50% no-repeat;}
+
+/* 大圖 */
+#bannerWrap .main-slider-content { position:relative; margin:0; padding:0; width:600px; height:400px; overflow:hidden;}
+#bannerWrap .sliders-wrap-inner { margin:0; padding:0; position:absolute; width:600px; height:400px; overflow:hidden; list-style:none;}
+#bannerWrap .sliders-wrap-inner li { float:left; position:relative; margin:0; padding:0; height:400px; overflow:hidden;}
+#bannerWrap .sliders-wrap-inner li img { padding:0; width:600px; height:400px;}
+
+/* 小圖 */
+#bannerWrap .navigator-content { position:absolute; bottom:-110px; left:0px; width:600px; height:95px; overflow:hidden; background:url(../images/ibk.gif) bottom repeat-x; padding-bottom:2px;}
+#bannerWrap .navigator-wrapper { position:relative; top:0; left:0; width:600px; height:95px; overflow:hidden; z-index:5;}
+#bannerWrap ul.navigator-wrap-inner { position:absolute; top:0; left:0; margin:0; padding:0; width:100%; list-style:none;}
+#bannerWrap ul.navigator-wrap-inner li { float:left; width:140px; height:95px; overflow:hidden; cursor:pointer; background-color:#fff; }
+#bannerWrap ul.navigator-wrap-inner li img{ padding:0; width:140px; height:95px;border: #ccc solid 1px;}
+
+/* 按鈕 */
+/*.imgWrap .button-next, .imgWrap .button-previous{ display:block; position:absolute; left:0px;  bottom:50px; width:15px; height:15px; overflow:hidden; text-indent:-9999px; z-index:5; cursor:pointer;}
+.imgWrap .button-previous{ left:70px;}
+.imgWrap .button-control { float:left;}*/
+
+.viewRight{width:350px; height:430px; margin-right:20px; float:right; font-family:'微軟正黑體','Arial';}
+.roomTitle{ line-height:30px; font-size:23px; color:#444; margin-bottom:10px;}
+.roomTitle span{font-family: "Times New Roman", Times, serif; font-size:16px; color:#888;}
+.roomInfo{ line-height:22px; font-size:14px; color:#555; padding-bottom:10px; padding-left:5px; border-bottom:#888 1px solid;}
+table.roomDetail{ width:355px; height:250px; border:0; border-spacing: 0; border-collapse: collapse; overflow:hidden; margin-top:10px; margin-left:5px;}
+table.roomDetail tr {font-size: 13px; color:#555; line-height:20px;}
+table.roomDetail th { width:20%; vertical-align:top; text-align:right;}
+table.roomDetail th span { vertical-align:top; text-align:right; padding-right:10px; line-height:20px; border-right:#888 1px solid;}
+table.roomDetail td { width:80%; vertical-align:top; text-align:left; padding-left:10px;}
+.roomback{ right:10px; bottom:0; position: absolute;}
+
+/*news*/
+.newsTitle{ width:1005px; margin:25px auto 0; padding:0; overflow:hidden; border-bottom:#aaa solid 1pt;}
+.newsTitle table{ width:1005px; border:0; border-spacing: 0; border-collapse: collapse; overflow:hidden;}
+.newsTitle tr {font-size: 16px; color:#333; line-height:30px;  font-weight:bold;}
+.newsTitle th{width:80%; vertical-align: middle; text-align:left; padding-left:15px;}
+.newsTitle td{width:20%; vertical-align: middle; text-align:right; padding-right:15px;}
+.newsMain{ width:975px; margin:25px auto; padding:0; overflow:hidden; font-size: 13px; color:#777; line-height:20px; padding: 0 15px 20px; border-bottom:#aaa solid 1pt;}
+.btnBack { width:130px; height:70px; margin:25px auto; background:url(../images/btn_back.png) no-repeat top center;}
+.btnBack:hover{ background-position:0 -70px;}
+
+/*location*/
+.location{ height:550px;}
+.leftBox{ width:500px; height:500px; margin-top:10px; margin-left:30px; float:left; background:url(../images/map.jpg) no-repeat bottom right;}
+.rightBox{ width:500px; height:410px; margin-top:100px; margin-right:20px; float:right;}
+.companyPic{ width:130px; height:80px; margin-left:20px;}
+.companyTxt{ width:265px; height:115px; margin-left:25px; margin-top:10px; overflow:hidden;}
+.companyTxt table{ width:265; border:0; border-spacing: 0; border-collapse: collapse; overflow:hidden;}
+.companyTxt tr {font-size: 13px; color:#555; line-height:20px;}
+.companyTxt td.title {font-size: 13px; font-family:'calibri'; text-align:left; width:20%; vertical-align:middle;}
+.companyTxt td.line {font-size: 12px; text-align:right; width:5%; vertical-align:middle;}
+.companyTxt td.info {font-size: 12px; text-align:left; width:75%; vertical-align:middle;}
+.trafficBox{ width:455px; font-size:12px; color:#333; line-height:22px; margin:0; padding:0;}
+.trafficTitle{ width:430px; font-size:12px; color:#000; line-height:22px; padding-left:25px; font-weight:bold; }
+.train{ background:url(../images/train.png) no-repeat left;}
+.bus{ background:url(../images/bus.png) no-repeat left;}
+.car{ background:url(../images/car.png) no-repeat left;}
+.trafficInfo{ width:430px; font-size:12px; color:#333; line-height:22px; margin-left:25px; margin-bottom:20px;}
+.trafficInfo ul{ list-style:none; margin:0; padding:0;}
+.trafficInfo li{ background:url(../images/ldot.png) left 7px no-repeat; padding-left:15px;}
+
+/*Contact*/
+.contact{width:1005px; height:500px; margin:25px auto 0; padding:0; overflow:hidden; background:url(../images/contact_pic.jpg) no-repeat right center; font-family:'微軟正黑體','Arial'; color:#444; font-size:13px;}
+.contactBox{ width:640px; margin:0; margin-left:10px; float:left; position:relative;}
+.contactInfo{ height:25px;}
+.consulbox{ margin:0; padding:0; width:590px;}
+.formCont {margin: 20px 0; border:0; border-collapse: collapse; overflow:hidden; font-family:"微軟正黑體", Arial;}
+.formCont td.title { padding: 10px 5px; vertical-align: middle; text-align:right; line-height:25px; width:75px;}
+.formCont td.title span { padding-right:5px;}
+.formCont td.info { padding: 10px; width:200px; vertical-align: middle;}
+.formCont td.conT { padding: 10px; width:15%; vertical-align: middle; text-align:right;}
+.formCont td.conM { padding: 10px; width:85%; vertical-align: middle;}
+.w170 { width: 180px;}
+.w480 { width: 475px;}
+.inputxt { height: 20px; border: 1px solid #d9c8d7; background-color: #fff;}
+.input { padding: 5px; background-color: #fff; border: 1px solid #d9c8d7;}
+.inBag { padding: 2px 0 3px; border:1px solid #abadb3; background-color:#FFF; font-family:'微軟正黑體','Arial'; color:#444; font-size:13px;}
+.btnReset, .btnSubmi { display: block; margin: 5px 0 0 15px; width: 83px; height: 50px; float: right; text-indent: -9999px; border: 0; background: url(../images/btn_contact.png) no-repeat 0 0; overflow: hidden; cursor: pointer;}
+.btnReset { background-position: 0 0;}
+.btnSubmi { background-position: -80px 0;}
+.btnReset:hover { background-position: 0 -50px;}
+.btnSubmi:hover { background-position: -80px -50px;}
+
+/*其他*/
+.super{ vertical-align: super; font-size:9px; -webkit-transform : scale(0.75); display:inline-block;}
+
+
+
